@@ -14,8 +14,8 @@ jobs:
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          cd downloads/complete
-          git pull origin server
+          cd downloads/complete/Deploy-2
+          git pull origin main
           docker stop project
           docker rm project
           docker build -t prjdep .
