@@ -6,11 +6,11 @@ RUN mkdir /completedep
 ##set direktori utama
 WORKDIR /completedep
 
-##copy seluruh file ke app
+##copy seluruh file ke completedep
 ADD . .
 
 ##buat executeable
-RUN go build -o server .
+RUN go build -o main .
 
 ##jalankan executeable
-CMD ["./server"]
+CMD ["./main"]
